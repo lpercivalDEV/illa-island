@@ -4,7 +4,6 @@ import "../styles/tailwind.css"
 
 import Header from "./Header.js"
 import Footer from "./Footer.js"
-import Palabras from "./Palabras.js"
 
 const home = () => {
   return (
@@ -12,15 +11,17 @@ const home = () => {
       <Header />
       <h1>illa island</h1>
       <ul>
-        <li>home (logo/hero with nav)</li>
-        <li>about (globe)</li>
-        <li>tech (separate page)</li>
-        <li>art (separate page)</li>
-        <li>network (boat/island/maps)</li>
+        <li>
+          home (logo/hero with nav - circle logo transitions into globe when
+          scrolled to next section)
+        </li>
+        <li id="about">about (globe)</li>
+        <li>tech (separate page - digital wave, dark)</li>
+        <li>art (separate page - natural wave, light)</li>
+        <li id="network">network (boat/island/maps)</li>
         <li>contact (msg in bottle)</li>
       </ul>
 
-      <Palabras />
       <Footer />
     </div>
   )
